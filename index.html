@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BILLAL HOSSEN | ELECTRIC</title>
+  <meta name="description" content="BILLAL HOSSEN ELECTRIC - ইলেকট্রিক পণ্য ও সেবা">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
+    header{background:linear-gradient(135deg,#0f172a,#2563eb);color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+    .logo{font-size:22px;font-weight:800}.call{background:#fff;color:#2563eb;padding:9px 15px;border-radius:25px;text-decoration:none;font-weight:700}
+    .hero{padding:70px 6%;background:linear-gradient(135deg,#eaf2ff,#fff);text-align:center}
+    .hero h1{font-size:42px;margin-bottom:12px}.hero h1 span{color:#2563eb}.hero p{font-size:19px;color:#526078;max-width:700px;margin:0 auto 25px}
+    .btn{display:inline-block;background:#16a34a;color:#fff;text-decoration:none;padding:13px 24px;border-radius:10px;font-weight:700;margin:5px;border:0;cursor:pointer;font-size:16px}
+    .btn.blue{background:#2563eb}
+    .section{padding:55px 6%;max-width:1100px;margin:auto}.section h2{text-align:center;font-size:30px;margin-bottom:30px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:25px;border-radius:16px;box-shadow:0 8px 25px #0000000b;text-align:center}
+    .icon{font-size:38px;margin-bottom:10px}.price{font-size:30px;color:#2563eb;font-weight:800;margin:8px 0}
+    .order{background:#fff;max-width:650px;margin:auto;padding:28px;border-radius:18px;box-shadow:0 8px 30px #00000012}
+    label{display:block;margin:12px 0 6px;font-weight:700}input,textarea{width:100%;padding:13px;border:1px solid #d7dce5;border-radius:9px;font-size:16px}textarea{min-height:100px;resize:vertical}
+    footer{text-align:center;background:#0f172a;color:#fff;padding:28px 6%;margin-top:30px}
+    .small{font-size:14px;color:#64748b;margin-top:8px}
+    @media(max-width:750px){.cards{grid-template-columns:1fr}.hero h1{font-size:32px}header{padding:15px 4%}.section{padding:45px 4%}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">BILLAL HOSSEN</div>
+  <a class="call" href="tel:01717072722">📞 কল করুন</a>
+</header>
+
+<section class="hero">
+  <h1>আপনার বিশ্বস্ত <span>ELECTRIC</span> সেবা</h1>
+  <p>ইলেকট্রিক পণ্য ও প্রয়োজনীয় সেবা সহজে অর্ডার করুন। দ্রুত যোগাযোগ ও WhatsApp অর্ডারের সুবিধা।</p>
+  <a class="btn" href="#order">🛒 অর্ডার করুন</a>
+  <a class="btn blue" href="https://wa.me/8801717072722?text=আসসালামু%20আলাইকুম,%20আমি%20আপনার%20পণ্য%20সম্পর্কে%20জানতে%20চাই।" target="_blank">💬 WhatsApp</a>
+</section>
+
+<section class="section">
+  <h2>আমাদের সুবিধা</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">⚡</div><h3>ইলেকট্রিক পণ্য</h3><p>প্রয়োজনীয় ইলেকট্রিক পণ্য ও আনুষঙ্গিক সামগ্রী।</p></div>
+    <div class="card"><div class="icon">🚚</div><h3>সহজ অর্ডার</h3><p>ফর্ম পূরণ করে সরাসরি WhatsApp-এ অর্ডার পাঠান।</p></div>
+    <div class="card"><div class="icon">📞</div><h3>দ্রুত যোগাযোগ</h3><p>পণ্য বা সেবা সম্পর্কে জানতে সরাসরি ফোন করুন।</p></div>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <h2>অর্ডার / যোগাযোগ</h2>
+  <div class="order">
+    <form onsubmit="sendWhatsApp(event)">
+      <label for="name">আপনার নাম</label>
+      <input id="name" required placeholder="নাম লিখুন">
+
+      <label for="phone">মোবাইল নম্বর</label>
+      <input id="phone" required type="tel" placeholder="01XXXXXXXXX">
+
+      <label for="product">পণ্য / সেবার নাম</label>
+      <input id="product" required placeholder="কি নিতে চান?">
+
+      <label for="qty">পরিমাণ</label>
+      <input id="qty" type="number" min="1" value="1">
+
+      <label for="address">ঠিকানা / অতিরিক্ত তথ্য</label>
+      <textarea id="address" placeholder="আপনার ঠিকানা বা প্রয়োজনীয় তথ্য"></textarea>
+
+      <button class="btn" type="submit">📲 WhatsApp-এ অর্ডার পাঠান</button>
+      <p class="small">বাটনে চাপ দিলে WhatsApp খুলে অর্ডারের তথ্য চলে যাবে।</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <h3>BILLAL HOSSEN ELECTRIC</h3>
+  <p>📞 01717072722</p>
+  <p class="small" style="color:#cbd5e1">© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const product=document.getElementById('product').value.trim();
+  const qty=document.getElementById('qty').value;
+  const address=document.getElementById('address').value.trim();
+
+  const text =
+`আসসালামু আলাইকুম,
+আমি একটি অর্ডার করতে চাই।
+
+নাম: ${name}
+মোবাইল: ${phone}
+পণ্য/সেবা: ${product}
+পরিমাণ: ${qty}
+ঠিকানা/তথ্য: ${address || 'প্রযোজ্য নয়'}`;
+
+  window.open('https://wa.me/8801717072722?text='+encodeURIComponent(text),'_blank');
+}
+</script>
+</body>
+</html>
